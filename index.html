@@ -1,4 +1,3 @@
-<!-- Updated Black & White Tailwind Version -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,21 +6,22 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body 
-    class="bg-black min-h-screen flex items-center justify-center"
+    class="bg-black min-h-screen flex items-center justify-center px-4"
     style="background-image: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center; background-repeat: no-repeat;"
   >
-    <!-- Overlay for better readability -->
+    <!-- Overlay -->
     <div class="absolute inset-0 bg-black/50"></div>
 
-    <div class="relative bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl p-10 max-w-md w-full text-center border border-black">
+    <!-- Card -->
+    <div class="relative bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl p-6 md:p-10 w-full max-w-md text-center border border-black">
       <!-- Logo -->
       <div class="mb-6">
-        <img src="./assets/images/logo.jpg" alt="TexKing Logo" class="mx-auto h-20 w-20 object-contain rounded-full shadow-md border border-black" />
+        <img src="./assets/images/logo.jpg" alt="TexKing Logo" class="mx-auto h-16 w-16 md:h-20 md:w-20 object-contain rounded-full shadow-md border border-black" />
       </div>
 
       <!-- Title -->
-      <h1 class="text-3xl md:text-4xl font-bold text-black mb-3">🚀 Coming Soon</h1>
-      <p class="text-gray-800 mb-6 leading-relaxed">
+      <h1 class="text-2xl md:text-4xl font-bold text-black mb-3">🚀 Coming Soon</h1>
+      <p class="text-gray-800 mb-6 leading-relaxed text-sm md:text-base">
         We're crafting something amazing. Join our mailing list to be the first to know!
       </p>
 
@@ -30,18 +30,18 @@
         <input
           type="email"
           placeholder="Enter your email"
-          class="px-4 py-3 border border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-black bg-white text-black placeholder-gray-600"
+          class="w-full px-4 py-3 border border-black rounded-lg focus:outline-none focus:ring-2 focus:ring-black bg-white text-black placeholder-gray-600 text-sm md:text-base"
         />
         <button
           type="submit"
-          class="bg-black text-white font-semibold px-4 py-3 rounded-lg hover:bg-gray-800 transition"
+          class="w-full bg-black text-white font-semibold px-4 py-3 rounded-lg hover:bg-gray-800 transition text-sm md:text-base"
         >
           Notify Me
         </button>
       </form>
 
       <!-- Footer -->
-      <div class="mt-8 text-gray-700 text-xs">
+      <div class="mt-8 text-gray-700 text-xs md:text-sm">
         &copy; 2024 TexKing. All rights reserved.
       </div>
     </div>
